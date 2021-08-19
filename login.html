@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/icon" href="img/logoutd.png" />
+    <script src="https://kit.fontawesome.com/ca1ea61cbb.js" crossorigin="anonymous"></script>
+    <div class="navbar">
+      <img src="img/logoutd.png" alt="logo" class="logo">
+      </div>
+</head>
+<body>
+<h2>Login</h2>
+<div class="card">
+    <div class="container">
+        <form action="log_in.php" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label><i class="fas fa-user"></i>Correo</label>
+            </div>
+            <div class="col-75">
+              <input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="Ingresar correo electrónico" name="correo" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label><i class="fas fa-lock"></i>Contraseña</label>
+            </div>
+            <div class="col-75">
+              <input type="password" pattern=".{6,}" placeholder="Ingresar contraseña" name="password" required>
+            </div>
+          <div class="row">
+            <input type="submit" value="Iniciar sesión">
+          </div>
+        </form>
+      </div>
+  </div>
+
+    
+    <div class="footer">
+      <p>Durango - Mezquital, 34308 Gabino Santillán, Dgo</p>
+    </div>
+
+</body>
+</html>
